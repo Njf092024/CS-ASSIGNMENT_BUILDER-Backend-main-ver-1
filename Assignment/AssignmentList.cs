@@ -1,5 +1,7 @@
 using C_ASSIGNMENT_BUILDER.Engine.AssignmentBuilder;
 namespace C_ASSIGNMENT_BUILDER.CurrentAssignment;
+using System.Collections.Generic;
+
 
 /*
 Fullstack tester: DiceRoller
@@ -41,5 +43,32 @@ public bool TestClassObjects()
 {
     Person person = new Person { Name = "Andy", Age = 30 };
     return person.Name == "Andy" && person.Age == 30;
-} 
+}
+
+public bool TestListContainsElement()
+{
+var numbers = new List<int> { 1, 2, 3, 4, 5 };
+return numbers.Contains(3);
+}
+
+public bool TestDictionaryLookup()
+{
+    var ages = new Dictionary<string, int>
+    {
+        { "Mandy", 25 },
+        { "Sandy", 30}
+    };
+    return ages["Mandy"] == 25;
+}
+
+public bool TestSumMethod()
+{
+    int result = Sum(5, 10);
+    return result == 15;
+}
+
+private int Sum(int a, int b)
+{
+    return a + b;
+}
 }
