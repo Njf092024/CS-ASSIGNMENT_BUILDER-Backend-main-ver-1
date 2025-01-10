@@ -25,3 +25,13 @@ public class AssignmentList : AssignmentListBase
         ];
     }
 }
+
+public class MyTestClass
+{
+    public bool TestPrimitiveDataTypes()
+    {
+        int x = 10;
+        double y = 15.5;
+        return (x + y == 25.5);
+    }
+}
