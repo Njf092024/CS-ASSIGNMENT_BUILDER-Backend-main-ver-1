@@ -34,4 +34,11 @@ public class MyTestClass
         double y = 15.5;
         return (x + y == 25.5);
     }
+
+
+public bool TestClassObjects()
+{
+    Person person = new Person { Name = "Andy", Age = 30 };
+    return person.Name == "Andy" && person.Age == 30;
+} 
 }
